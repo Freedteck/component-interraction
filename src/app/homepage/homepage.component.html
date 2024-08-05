@@ -1,0 +1,10 @@
+<header sui-container>
+  <h1 sui-header>Component Interaction</h1>
+  <app-custom-button
+    *ngFor="let button of buttonProperties"
+    [id]="button.id"
+    [text]="button.text"
+    [emphasis]="button.emphasis"
+    (click)="onClick(button.id)"
+  ></app-custom-button>
+</header>
